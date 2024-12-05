@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9cc7d7;
+            color: #000;
+            overflow: hidden;
+            margin: 0; /* Removes margin around the screen */
+            padding: 0; /* Removes padding around the screen */
+        }
+
+        header {
+            background-color: #388adb;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 20px 0; /* Adjusted padding for header */
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            border-radius: 0%;
+            margin-left: 10px; /* Adds a small gap from the edge */
+        }
+
+        header div {
+            flex: 3;
+            text-align: left;
+            padding-left: 30px; /* Moves text slightly to the right */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            margin: 5px 0;
+            font-size: 1.5em;
+        }
+
+        .home-button {
+    position: absolute; /* Use absolute positioning */
+    top: 10px; /* Adjust the top margin */
+    right: 10px; /* Align it to the right edge */
+    background-color: rgb(34, 162, 34);
+    color: white;
+    border: none;
+    border-radius: 1px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.home-button:hover {
+    background-color: #47ee4a;
+}
+
+
+        hr {
+            border: none;
+            border-top: 3px solid #000; /* Top line */
+            border-bottom: 3px solid #000; /* Bottom line */
+            margin: 0; /* No space around the line */
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 3px;
+            text-align: left;
+        }
+
+        th:nth-child(1), td:nth-child(1) {
+    width: 10%;
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 10%;
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 10%;
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 15%;
+}
+
+
+        footer {
+            text-align: center;
+            background-color: #e2c283;
+            padding: 9px;
+            margin-top: 27px;
+        }
+
+        .line{
+            width: 2px;
+            background-color:black;
+            height: 531px;
+            position:absolute;
+            left:65%;
+        }
+
+        .content-wrapper {
+            position: relative;
+        }
+
+        .interests-section {
+            position: absolute;
+            top: 65%;
+            left: 68%;
+            width: 60%;
+            padding: 20px;
+        }
+
+        .interests-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.interests-section li {
+    margin-bottom: 10px;
+    white-space: normal; /* Allow normal text wrapping */
+    word-wrap: break-word; /* Break long words if necessary */
+}
+
+.interests-section h3 {
+    margin-bottom: 15px;
+}
+
+
+.skills-section {
+            position: absolute;
+            top: 23%;
+            left: 68%;
+            width: 10%;
+            padding: 20px;
+        }
+
+        .skills-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-section li {
+    margin-bottom: 5px; /* Adds space between list items */
+    line-height: 1.5; /* Increases line height within each list item */
+}
+
+.skills-section h3 {
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
+
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header style="background-color: #4f92d5; 
+        color: #fff; 
+        display: flex; 
+        align-items: center; 
+        padding: 3px;">
+            <!-- Image Section -->
+            <div style="flex: 1; 
+            text-align: left;">
+                <img src="mypic.jpeg" alt="Profile Picture" style="width: 150px; height: 150px; border: 2px solid #000;">
+            </div>
+            <!-- User Details Section -->
+            <div style="flex: 9; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="margin: 0; color:#000; font-size: 2.5em;">Shivani Kamath</h1>
+                <h3 style="margin: 5px 0;color:#000; font-size:1.2em;">7619394856</h3>
+                <h3 style="margin: 5px 0;color:#000; font-size: 1.2em;">shivanikamath2004@gmail.com</h3>
+            </div>
+
+            <div>
+                <a href="website.html" class="home-button">Home</a>
+            </div>
+
+        </header>
+        <hr style="border: none; height: 3px; background-color: #000; margin: 0;">
+
+        <div class="content-wrapper"></div>
+        <div class="line">
+        </div>
+
+        <div class="interests-section">
+            <h3>Interests</h3>
+            <ul>
+                <li>Networking and Building Relationship</li>
+                <li>Learning new things</li>
+                <li>Coding</li>
+                <li>Reading and Researching</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+
+
+        <div class="skills-section">
+            <h3>Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>R Programming</li>
+                <li>DBMS(MySQL)</li>
+                <li>HTML,CSS,Javascript</li>
+                <li>Microsoft PowerBI</li>
+            </ul>
+        </div>
+
+        <div style="padding-left: 30px;margin-bottom: 60px;">
+            <h3>Objective:</h3>
+            <p>I am a CSE student from Canara Engineering College expecting a package of 8LPA</p>
+        </div>
+        
+        
+
+        <div style="padding-left: 400px;">
+            <h3>Education Specification</h3>
+        </div>
+        <div style="padding-right: 500px; margin: 0 auto; max-width: 800px;">
+            <table style="width: 100%; margin-bottom: 30px;">
+                <tr>
+                    <th>Degree</th>
+                    <th>Passing Year</th>
+                    <th>Division</th>
+                    <th>Institute Name</th>
+                </tr>
+                <tr>
+                    <td>BE</td>
+                    <td>Present</td>
+                    <td>A</td>
+                    <td>Canara Engineering College</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>2022</td>
+                    <td>Distinction</td>
+                    <td>Vidyodaya Pre-University College</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>2020</td>
+                    <td>Distinction</td>
+                    <td>St. Antony's girls high school</td>
+                </tr>
+            </table>
+        </div>
+        <hr style="border: none; height: 2px; background-color: #000; margin: 0;">
+        <div style="padding-left: 30px;">
+        <h3>Contact Details</h3>
+    </div>
+        <div style="padding-left: 30px;">
+            <p style="margin-bottom: 10px;">
+                <strong>Fathers Name:</strong> Damodar Kamath
+            </p>
+            <p style="margin-bottom: 10px;">
+                <strong>Mothers Name:</strong> Shaila Kamath
+            </p>
+            <p style="margin-bottom: 10px;">
+                <strong>Date of Birth:</strong> 08/10/2004
+            </p>
+            <p style="margin-bottom: 10px;">
+                <strong>Address:</strong> Manipal, India
+            </p>
+        </div>
+
+        
+
+
+        
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; Shivani Kamath
+    </footer>
+</body>
+</html>

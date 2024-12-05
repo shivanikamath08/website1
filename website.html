@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "biodata.html" class = "nav-link">Bio Data</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "resume.html" class = "nav-link">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <header class="flex">
+            <div class="container">
+                <div class="header-title">
+                    <h1 id="animated-text"></h1>
+                    <p id="animated-description">I aim to turn ideas into impactful solutions through code, design, and collaboration.</p>
+                </div>
+            </div>
+        </header>
+                
+
+        <!-- js -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Typewriting animation
+                const text = "Hi, I am Shivani Kamath";
+                const animatedText = document.getElementById("animated-text");
+                let i = 0;
+    
+                function typeLetter() {
+                    if (i < text.length) {
+                        animatedText.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(typeLetter, 100); // Adjust typing speed
+                    } else {
+                        // Display the complete text after typing
+                        setTimeout(() => {
+                            animatedText.textContent = text;
+                        }, 500);
+                    }
+                }
+                typeLetter();
+            });
+        </script>
+    </body>
+    </html>
